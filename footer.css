@@ -1,0 +1,190 @@
+
+
+/* Criação dos plocos amarelos do rodapé */
+#block{
+    background-color: #1b1b1b;
+    height: 83px;
+}
+
+/* Criação do container */
+#footerContainer{
+    background-color: #3b3b3b;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+/* Primeira metade do rodapé contendo as informações de contato*/
+#contain1{
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 600px;
+    font-size: 20px;
+    font-weight: 300;
+}
+    
+/* Logo e icone das redes sociais ROCKY */
+ #contact{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+    
+/* espaçamento entre o logo da ROCKY e as redes sociais */
+#logo1{
+    color: white;
+    letter-spacing: 8px;
+    font-size: 40px;
+    font-weight: 400;
+    margin-right: 60px;
+}
+
+/* Tamanho e posicionamento dos icones das redes sociais */
+#face{
+    height: 47px;
+    margin-left: 40px;
+}
+
+/* Definindo o container flex para que o email e telefone fique lado a lado*/
+#icons{
+    display: flex;
+    margin-top: 40px;
+}
+
+/* Linha do email com icone de envelope*/
+#envelope{
+    display: flex;
+    align-items: center;
+    width: 320px; 
+}
+
+/* Tamanho e posicionamento do icone de envelope do email */
+#envelope li img{
+    margin-right: 20px;
+    height: 30px;
+    top: 10px;
+    margin-top: 5px;
+}
+
+/* Linha do numero de telefone com icone de telefone*/
+#phone{
+    display: flex;
+    margin-left:30px;
+    align-items: center;
+    justify-content:center;
+    border-left: 1px solid white;   
+}
+
+/* Tamanho e posicionamento do icone de telefone do numero de telefone*/
+#phone li img{
+    margin-right: 20px;
+    height: 20px;
+    top: 10px;
+    margin-top: 5px;
+}
+
+/* Linha do endereço com ícone de localização */
+#local{
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    width: 470px;
+    font-weight: 200;
+}
+
+/* Tamanho e posicionamento do icone de localização da linha de endereço */
+#local li img{
+    margin-right: 35px;
+    height: 21px;
+    top: 10px;
+    margin-top: 5px;
+}
+
+/* Cor do endereço do rodapé*/
+#local a{
+    color: white;
+}
+
+
+/* Criação de um container flex para o quadro de preenchimento das informações pessoais */
+#information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 700px;
+}
+
+/* Tamanho e posicionamento do conteiner para os inputs */
+#fill{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    background: white;
+    padding: 25px;
+    box-shadow: 10px 10px 20px black;
+}
+
+/* título da caixa "Ou envia uma mensagem"*/
+#fill p{
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 30px;
+}
+
+/* Botão "voltar ao topo" do rodapé*/
+#fill a{
+    color: mediumblue;
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+/* Tamanho das caixas de input */
+input{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Mudando a cor do placeholder dos inputs */
+input::placeholder{
+    color: rgb(211, 211, 211); 
+}
+
+/* Tamanho das caixas de input */
+#info{
+    height: 60px;
+    padding-left: 20px;
+}
+
+/* aumentando o tamanho do input de mensagem */
+#message{
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    padding-left: 20px;
+    padding-bottom: 90px ;
+}
+
+/* Botaõ "ENVIAR MENSAGEM" */
+input[type="submit"]{
+    font-size: 20px;
+    color: white;
+    height: 90px;
+    font-weight: 700;
+    background-color: #1b1b1b;
+    border: none;
+    cursor: pointer;
+}
+

@@ -1,0 +1,114 @@
+ /* Removendo o estilo padrão dos links */
+a{  
+    text-decoration: none;  
+}
+
+/* Barra de navegação */
+header{
+    color: white;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2.5%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* cor do texto dos botoes do menu de navegação*/
+header a{
+    color: white;
+}
+
+/* tamanho e espessura da fonte da logo do site */
+#logo{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+/* Deixando os itens da barra de navegação um ao lado do outro com box flexivel*/
+#menu{
+    display: flex;
+}
+
+/* Aumentando a area de contato dos itens da barra de navegação */
+#menu a{
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 700;
+ }
+
+
+
+ /* Criando um container para o botão do menu hamburguer */
+.containerButton{
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+}
+
+/* removendo a caixa de verificação do checkbox, mudando efeito do mouse quando passa por cima e tirando a visibilidade*/
+#checkbox-menu{
+    cursor: pointer;
+    visibility: hidden;
+    display: none;
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+/* Criando um estilo para o botão do menu hamburguer */
+label{
+    margin-left: 100%;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 35px;
+    width: 40px;
+    margin-bottom: 25px;
+}
+
+label span{
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: white; 
+}
+
+label span:nth-child(1){
+    top: 10px;
+}
+
+label span:nth-child(2){
+    top: 20px;
+}
+
+label span:nth-child(3){
+    top: 30px;
+}
+
+/* Transformando o botão hamburguer em um "X" quando clicado */
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 15px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 15px
+}
+
+/*removendo "Home" pois ele só será visivel no menu hamburguer mobile*/
+#home{
+    display: none;
+
+}#phone{
+
+    width: 50%;
+  
+}

@@ -1,0 +1,363 @@
+/* Definindo a fonte e a largura máxima da página e removendo margin, padding e estilos de listas*/
+*{
+    margin:0;
+    padding: 0;
+    max-width: 1920px;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+
+/* ----------------------------------- 1ª página-------------------------------------------------- */
+/* Fundo da página inicial*/
+#firstPage{
+    background-image: url(./web/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 40px;
+    height: 1080px;
+}
+
+
+/* Título de todas páginas */
+.mainTitle h1{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 82px;
+}
+
+/* Título da 1ª Página "Fotos em alta resolução..."  */
+#firstPage h2{
+    color: white;
+    font-size: 90px;
+    font-weight: 800;
+    width: 80%;
+    margin-inline: 10%;
+    padding-top: 10%;
+    line-height: 1.4em;
+    margin-bottom: 5.8%;
+    text-align: center;
+}
+
+/* Texto da página inicial */
+#firstPage p{ 
+    text-align: center;
+    color: white;
+    font-weight: 500px;
+    font-size: 30px;
+    line-height: 1.52em;
+    letter-spacing: 0.4px;
+    padding-bottom:2%;
+}
+
+
+/* Botão cinza da 1ª página */
+.styleButton {
+    position: relative;
+    border: 0;
+    line-height: 2.5;
+    font-weight: 600;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 15px;
+    background-color: rgb(93, 93, 93);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    transform: translatex(-50%);
+    left: 50%;
+    margin-top: 7.5%;
+}
+
+/* -----------------------------------------  SOBRE ------------------------------------- */
+/* container da parte "Sobre" */
+#about{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 164px;
+    justify-content: center;
+}
+
+/* Texto da 2ª pagina */
+#about p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300px;
+    line-height: 35px;
+    margin-top: 130px;
+    padding: 45px;
+    width: 80%;
+    letter-spacing: 0.05px;
+    box-shadow: 0 0 45px black;
+    text-align: justify;
+}
+
+/* Imagem junto do texto */
+#about img{
+    float: left;
+    width: 450px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+/* Centralizando o conteúdo */
+#about article{
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------------------------------------- Planos ---------------------------------- */
+/* Fundo da parte "Planos" */
+#plans{
+    background-color: whitesmoke;
+}
+
+/* Título "Planos */
+#plans h2{
+    padding-top:  5%;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* Container dos 3 planos existentes */
+#plansContainer{
+    display: flex;
+    width: 80%;
+    padding: 10%;
+    padding-top: 5%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
+}
+
+/* Tamanho da caixa de cada plano */
+.planContain{
+    margin: 25px;
+    text-align: center;
+    height: 500px;
+    width: 450px;
+    box-shadow: 10px 10px 40px black;
+}
+
+/* Título dos Planos*/
+.planContain h3{
+    margin-top: 10%;
+    font-size: 35px;
+    margin-bottom: 10%;
+}
+
+/* Texto dos conteúdos e preço dos planos*/
+.planContain p{
+    margin: 30px;
+    font-size: 19px;
+    opacity: 0.9;
+}
+
+/* estilizando o texto "ECONOMIZE" */
+#descont{
+    font-size: 15px;
+    opacity: 0.6;
+    padding: 10px;
+    background-color: #ff4141;
+    color: white;
+    border-radius: 30px;
+    font-weight: 400;
+}
+
+/* Botão vermelho "COMPRE AGORA"*/
+.planContain button{
+    cursor: pointer;
+    margin-top: 2.5%;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    background-color:  rgb(218, 38, 38);
+    border-style: none ;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 2px 10px black;
+}
+
+/*------------------------------- DESTAQUES ------------------------------*/
+/* Texto da página */
+#highlights #text{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 9%;
+    margin-left: 8%;
+    font-size: 25px;
+    word-spacing: 0.5px;
+    line-height: 40px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+/* Título das fotos */
+#highlights h2{
+
+    width: 85%;
+    font-size: 25px;
+    margin-left: 7.5%;
+    margin-bottom: 1%;
+    text-align: center;
+    word-spacing: 0.5px;
+    line-height: 40px;
+    color: rgb(29, 29, 29);
+}
+
+/* Container das fotos */
+#imageContainer{
+    width: 85%;
+    margin-left: 6.95%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap ;
+}
+
+/* Sombra e espaçamento entre as fotos */
+#imageContainer img{  
+    margin: 10px;
+    box-shadow: 0 0 15px black;
+}
+
+/* ----------------------------------------- SERVIÇOS ---------------------------------- */
+
+/* Container do "Book Fotográfico" */
+#book{
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 5%;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+/* Imagem do "Book Fotográfico" */
+#book img{
+    float: left;
+    margin-right:  2%;
+    margin-bottom: 3%;
+    width: 600px;
+    box-shadow: 0 10px 30px black;
+    
+}
+
+/* Título do "Book Fotográfico" */
+#book h2{
+    color: rgb(37, 42, 47);
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+/* Texto do "Book Fotográfico" */
+#book p{
+    text-align: justify;
+    font-size: 25px;
+    padding-bottom: 7.5%;
+    border-bottom: 2px dotted black;
+}
+
+/* Container "Retratos" */
+#portrait{
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 5%;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+/* Imagem de "Retratos" */
+#portrait img{
+    float: right;
+    margin-left:  2%;
+    margin-bottom: 3%;
+    width: 600px;
+    box-shadow: 0 10px 30px black;
+}
+
+/* Título de "Retratos" */
+#portrait h2{
+    color: rgb(37, 42, 47);
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+/* Texto de "Retratos" */
+#portrait p{
+    text-align: justify;
+    font-size: 25px;
+    padding-bottom: 7.5%;
+    border-bottom: 2px dotted black;
+}
+
+/* Container do "Acompanhamento Mensal" */
+#accompaniment{
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 5%;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+/* Imagem do "Acompanhamento Mensal */
+#accompaniment img{
+    float: left;
+    margin-right:   2%;
+    margin-bottom: 3%;
+    width: 600px;
+    box-shadow: 0 10px 30px black;
+}
+
+/* Título do "Acompanhamento Mensal */
+#accompaniment h2{
+    color: rgb(37, 42, 47);
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+/* Texto do "Acompanhamento Mensal */
+#accompaniment p{
+    text-align: justify;
+    font-size: 25px;
+}
+
+/*------------------------------- FOTOS ------------------------------*/
+/* Título das fotos*/
+#photos h2{
+    color:rgb(37, 42, 47);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 82px;
+}
+
+/* Container das Fotos */
+#photosContainer{
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    margin-top: 1%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+/* Espaçamento, posições e tamanho das imagens */
+.phMain img{
+    margin: 25px ;
+    box-shadow: 0 10px 20px black;
+    width: 500px;
+    height: 600px;
+}
+
+/* Deixando algumas imagens maiores*/
+.ph1 img{
+   width: 775px;
+}

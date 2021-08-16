@@ -1,0 +1,55 @@
+/* Efeito ao passar o mouse por cima do logo do cabeçalho*/
+#logo:hover{
+    opacity: 0.5;
+    transition:0.5s;
+}
+
+/* Efeito ao passar o mouse por cima do logo do rodapé */
+#logo1:hover{
+    opacity: 0.5;
+    transition:0.5s;
+}
+
+/* Efeito ao passar o mouse por cima dos itens do menu de navegação */
+#menu a:hover{  
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.5s ease-in-out;
+}
+
+/* Efeito ao passar o mouse por cima dos icones das redes sociais no rodapé */
+#face:hover{
+    opacity: 0.4;
+}
+
+/* Efeito ao passar o mouse por cima do endereço no rodapé*/
+#local a:hover{
+    opacity: 0.4;
+}
+
+/* Efeito ao passar o mouse por cima do "ENVIAR MENSAGEM" no rodapé */
+input[type="submit"]:hover{
+    opacity: 0.5;
+}
+
+/* Efeito ao passar o mouse por cima das fotos na página "FOTOS" simulando alguma funcionalidade que poderia ser incrementada*/
+.phMain:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse por cima dos botões "COMPRE AGORA" dos "PLANOS" */
+.planContain button:hover{
+    opacity: 0.7;
+}
+
+/* Efeito ao passar o mouse por cima do botão "CONHEÇA NOSSOS PLANOS" na 1ª página */
+.styleButton:hover {
+    background-color: rgb(151, 151, 151);
+    cursor: pointer;
+}
+
+/* Efeito ao clicar com o mouse no botão "CONHEÇA NOSSOS PLANOS" na 1ª página */
+.styleButton:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
